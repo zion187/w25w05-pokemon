@@ -7,7 +7,7 @@ export default function PokemonList() {
   const { data: pokemons, isLoading, isError, error } = useQuery({
     queryKey: ['pokemons'],
     queryFn: async () => {
-      const list = await getPokemonList(100)
+      const list = await getPokemonList(444)
 
       // Promise.all : 여러 비동기 작업을 병렬로 처리하고, 모든 작업이 완료될 때까지 기다림
       return Promise.all(
